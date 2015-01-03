@@ -6,4 +6,4 @@ compiler:
 
 install: sudo apt-get install xorg-dev libglu1-mesa-dev
 
-script: mkdir build && cd build && cmake .. && make
+script: mkdir build && cd build && cmake -DENABLE_DLANG=ON .. && make
