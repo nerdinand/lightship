@@ -4,6 +4,6 @@ compiler:
   - gcc
   - clang
 
-install: sudo apt-get install xorg-dev libglu1-mesa-dev
+install: sudo apt-get install xorg-dev libglu1-mesa-dev gdc
 
 script: mkdir build && cd build && cmake -DENABLE_DLANG=ON .. && make
